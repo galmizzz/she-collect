@@ -1,4 +1,4 @@
-# she-collect
+# she-collect A group project
 One-stop Website for All the links she needs to code effectively.
 
 #About this project
