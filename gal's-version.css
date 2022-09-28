@@ -1,0 +1,58 @@
+* {
+    font-family: 'Secular One', sans-serif;
+    direction: rtl;
+    
+}
+body {
+    background-color: rgb(53, 171, 88);
+}
+header {
+    display: flex;
+    flex-flow:row-reverse wrap;
+    width: 100%;
+    background-color: azure;
+    margin: 0px;
+}
+nav{
+    display: flex;
+    flex-flow:row wrap; 
+    margin-left: 250px;
+    margin-right: 0px;
+
+}
+a {
+    text-decoration: none;
+    padding: 10px;
+    color: rgb(0, 0, 0);
+    font-size: 18x;
+}
+a:hover {
+    font-style: oblique;
+}
+
+h1 {
+    color: azure;
+    text-align: center;
+    letter-spacing: 5px;
+    font-size: 40px;
+}
+
+.bg-img img{
+    width:700px;
+    height: 500px;
+    
+}
+p {
+    font-size: 20px;
+    background-color: rgb(253, 255, 133);
+    border-radius: 100%;
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    display: inline-block;
+}
+.header img {
+    background-color:azure;
+    opacity: 0.8;
+    border-right: rgb(123, 245, 123);
+}
