@@ -5,6 +5,7 @@
 }
 body {
     background-color: rgb(53, 171, 88);
+    margin: 0px;
 }
 header {
     display: flex;
@@ -12,6 +13,8 @@ header {
     width: 100%;
     background-color: azure;
     margin: 0px;
+    align-items: center;
+    justify-content: space-between;
 }
 nav{
     display: flex;
@@ -42,14 +45,16 @@ h1 {
     height: 500px;
     
 }
-p {
+.circleText {
     font-size: 20px;
     background-color: rgb(253, 255, 133);
     border-radius: 100%;
     width: 300px;
     height: 300px;
     text-align: center;
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    justify-items: center;
 }
 .header img {
     background-color:azure;
