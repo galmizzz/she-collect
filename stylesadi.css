@@ -1,0 +1,79 @@
+
+
+nav {
+    display: block;
+}
+
+body {
+    margin: 0;
+}
+
+/* ########### Nav bar  ############### */
+nav {
+    width: 100%;
+    margin: 0;
+}
+
+nav ul{
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    background-color: papayawhip;
+}
+
+ul.topnav-left li{
+    list-style: none;
+    float: left;
+}
+
+ul.topnav-left li a {
+    display: block;
+    text-decoration: none;
+    min-height: 16px;
+    text-align: center;
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+ul.topnav-left li a:hover {
+    background-color: burlywood;
+}
+
+ul.topnav-left li.dropdownIcon{
+    display:none;
+}
+
+/* ########## Mobile Styles ############# */
+
+@media screen and (max-width: 1010px) {
+
+    ul.topnav-left li:not(:nth-child(1)) {
+        display: none;
+    }
+
+    ul.topnav-left li.dropdownIcon {
+        display: block;
+        float: right;
+    }
+
+    ul.topnav-left.responsive li.dropdownIcon{
+        position: absolute;
+        top:0;
+        right: 0;
+    }
+
+    ul.topnav-left.responsive{
+        position: relative;
+    }
+
+    ul.topnav-left.responsive li {
+        display: inline;
+        float: none;
+    }
+
+    ul.topnav-left.responsive li a {
+        display: block;
+        text-align: left;
+    }
+}
+
