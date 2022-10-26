@@ -8,21 +8,25 @@
     </head>
 
     <body>
-
+        
         <header>
             <img src="logo2.png" alt="logo">
-            <nav>
-                <a href=""> | מאגרי תמונות </a>
-                <a href=""> | מאגרי פונטים</a>
-                <a href=""> | אייקונים</a>
-                <a href=""> | אתרים לתרגול</a>
-                <a href=""> | פורומים</a>
-                <a href=""> | תוספים</a>
-                <a href=""> | כלים נוספים</a>
+            <nav class="header">
+                <ul class="topnav-left responsive" id="dropdownClick">
+                    <li><img src="./logo2.png"></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#pic-pool"> Stock Pictures </a></li>
+                    <li><a href="#fonts-pool">Stock Fonts </a></li>
+                    <li><a href="#icons">אייקונים</a></li>
+                    <li><a href="#exercise-sites">אתרים לתרגול</a></li>
+                    <li><a href="#forum">פורומים</a></li>
+                    <li><a href="#plug-in">תוספים </a></li>
+                    <li><a href="#other-tools">כלים נוספים </a></li>
+                    <li class="dropdownIcon"><a href="javascript:void(0);" onclick="dropDownMenu()">&#9776;</a></li>
+                </ul>
             </nav>
         </header>
 
-        </div>
         <h1>מאגר קישורים למפתחת המתחילה</h1>
         <p class="circleText">באתר זה תמצאי את כל הקישורים הרלוונטיים לבניית האתר שלך. בהצלחה !</p>
         <div class="bg-img">
@@ -60,5 +64,26 @@
 
         <footer>
         </footer>
-        </body>
+
+        <script>
+
+        function dropDownMenu() {
+            var x = document.getElementById("dropdownClick");
+            if (x.className === "topnav-left"){
+                x.className += " responsive";
+                /*change topnav-left to responsive*/
+            } else {
+                x.className = "topnav-left";
+            }
+        }
+    
+        </script>
+    </body>
 </html>
+
+    
+
+
+
+
+
