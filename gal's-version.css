@@ -43,6 +43,7 @@ h1 {
 .bg-img img{
     width:700px;
     height: 500px;
+    float:left;
     
 }
 .circleText {
@@ -55,9 +56,31 @@ h1 {
     display: inline-flex;
     align-items: center;
     justify-items: center;
+
 }
 .header img {
     background-color:azure;
     opacity: 0.8;
     border-right: rgb(123, 245, 123);
+}
+section {
+    display: flex;
+    margin: 10px;
+    float: both;
+    flex-direction: column;
+}
+.sites {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: azure;
+    margin: 5px;
+    padding: 5px 10px;
+    justify-content: space-between;
+    border-radius: 10px;
+
+}
+.sites img {
+    width: 60px;
+    height:50px;
 }
