@@ -1,0 +1,88 @@
+<html>
+    <head>
+        <title>she collect</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css"> 
+    </head>
+
+    <body>
+        
+        <header>
+            <nav class="header">
+                <ul class="topnav-left responsive" id="dropdownClick">
+                    <li><img src="./logo2.png"></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#pic-pool"> Stock Pictures </a></li>
+                    <li><a href="#fonts-pool">Stock Fonts </a></li>
+                    <li><a href="#icons">אייקונים</a></li>
+                    <li><a href="#exercise-sites">אתרים לתרגול</a></li>
+                    <li><a href="#forum">פורומים</a></li>
+                    <li><a href="#plug-in">תוספים </a></li>
+                    <li><a href="#other-tools">כלים נוספים </a></li>
+                    <li class="dropdownIcon"><a href="javascript:void(0);" onclick="dropDownMenu()">&#9776;</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <h1>מאגר קישורים למפתחת המתחילה</h1>
+        <p class="circleText">באתר זה תמצאי את כל הקישורים הרלוונטיים לבניית האתר שלך. בהצלחה !</p>
+        <div class="bg-img">
+            <img src="she-codes-pic.png" alt="she-codes-pic">
+        </div>
+
+        <section>
+            <div class="sites">
+                <h2>מאגרי תמונות</h2>
+                <a href="https://unsplash.com/" target=”blank”>
+                    <img src="unsplash.png" alt="unsplash logo">
+                </a>
+                <a href="https://www.shutterstock.com/" target=”blank”>
+                    <img src="Shutterstock.png" alt="Shutterstock logo">
+                </a>
+                <a href="https://www.freepik.com/" target=”blank”>
+                    <img src="freepik.png" alt="freepik logo">
+                </a>
+            </div>
+
+            <div class="sites">
+                <h2>מאגרי פונטים</h2>
+                <a href="https://fonts.google.com/" target=”blank”>google fonts</a>
+                <a href="https://alefalefalef.co.il/" target=”blank”>אאא פונטים</a>
+                <a href="http://freefonts.co.il/" target=”blank”>freefonts</a>
+            </div>
+
+            <div class="sites">
+                <h2>אייקונים</h2>
+                <a href="https://fonts.google.com/icons" target=”blank”>google icons</a>
+                <a href="https://www.iconfinder.com/" target=”blank”>iconfinder</a>
+                <a href="https://www.flaticon.com/" target=”blank”>flaticon</a>
+            </div>
+        </section>
+
+        <footer>
+        </footer>
+
+        <script>
+
+        function dropDownMenu() {
+            var x = document.getElementById("dropdownClick");
+            if (x.className === "topnav-left"){
+                x.className += " responsive";
+                /*change topnav-left to responsive*/
+            } else {
+                x.className = "topnav-left";
+            }
+        }
+    
+        </script>
+    </body>
+</html>
+
+    
+
+
+
+
+

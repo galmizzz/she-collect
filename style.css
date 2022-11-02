@@ -1,0 +1,162 @@
+* {
+    font-family: 'Secular One', sans-serif;
+    direction: rtl;
+    
+}
+body {
+    background-color: rgb(53, 171, 88);
+    margin: 0px;
+}
+header {
+    display: flex;
+    flex-flow:row-reverse wrap;
+    width: 100%;
+    background-color: azure;
+    margin: 0px;
+    align-items: center;
+    justify-content: space-between;
+}
+nav{
+    display: flex;
+    flex-flow:row wrap; 
+    margin-left: 250px;
+    margin-right: 0px;
+    display: block;
+    width: 100%;
+    margin: 0;
+
+}
+
+a {
+    text-decoration: none;
+    padding: 10px;
+    color: rgb(0, 0, 0);
+    font-size: 18x;
+}
+a:hover {
+    font-style: oblique;
+}
+
+h1 {
+    color: azure;
+    text-align: center;
+    letter-spacing: 5px;
+    font-size: 40px;
+}
+
+.bg-img img{
+    width:700px;
+    height: 500px;
+    float:left;
+    
+}
+.circleText {
+    font-size: 20px;
+    background-color: rgb(253, 255, 133);
+    border-radius: 100%;
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    display: inline-flex;
+    align-items: center;
+    justify-items: center;
+
+}
+.header img {
+    background-color:azure;
+    opacity: 0.8;
+    border-right: rgb(123, 245, 123);
+}
+section {
+    display: flex;
+    margin: 10px;
+    float: both;
+    flex-direction: column;
+}
+.sites {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: azure;
+    margin: 5px;
+    padding: 5px 10px;
+    justify-content: space-between;
+    border-radius: 10px;
+
+}
+.sites img {
+    width: 60px;
+    height:50px;
+}
+
+
+
+
+
+/* ########### Nav bar  ############### */
+
+
+nav ul{
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    background-color: papayawhip;
+}
+
+ul.topnav-left li{
+    list-style: none;
+    float: left;
+}
+
+ul.topnav-left li a {
+    display: block;
+    text-decoration: none;
+    min-height: 16px;
+    text-align: center;
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+ul.topnav-left li a:hover {
+    background-color: burlywood;
+}
+
+ul.topnav-left li.dropdownIcon{
+    display:none;
+}
+
+/* ########## Mobile Styles ############# */
+
+@media screen and (max-width: 1010px) {
+
+    ul.topnav-left li:not(:nth-child(1)) {
+        display: none;
+    }
+
+    ul.topnav-left li.dropdownIcon {
+        display: block;
+        float: right;
+    }
+
+    ul.topnav-left.responsive li.dropdownIcon{
+        position: absolute;
+        top:0;
+        right: 0;
+        
+    }
+
+    ul.topnav-left.responsive{
+        position: relative;
+    }
+
+    ul.topnav-left.responsive li {
+        display: inline;
+        float: none;
+    }
+
+    ul.topnav-left.responsive li a {
+        display: block;
+        text-align: left;
+    }
+}
+
