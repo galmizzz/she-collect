@@ -69,7 +69,7 @@ ul.topnav-left li a {
 }
 
 ul.topnav-left li a:hover {
-    background-color: burlywood;
+    background-color: lightcyan;
     font-style: oblique;
 }
 
@@ -193,6 +193,7 @@ h2 {
 
     ul.topnav-left li.dropdownIcon a{
         font-size: 45px;
+        margin-right: 0.5em;
     }
 
 
@@ -211,6 +212,7 @@ h2 {
 
     ul.topnav-left.responsive{
         position: relative;
+        transition: 0.5s;
     }
 
     ul.topnav-left.responsive li {
@@ -227,8 +229,8 @@ h2 {
     ul.topnav-left.responsive li a {
         display: block;
         text-align: right;
-        padding: 2px;
-        font-size: 14px;
+        padding: 4px;
+        font-size: 21px;
     }
 
    section {
@@ -248,7 +250,6 @@ h2 {
    .bg-img{
         display: inline;
    }
-
 
    .bg-img img {
        width: 350px;
