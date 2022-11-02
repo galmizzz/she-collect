@@ -7,8 +7,12 @@ body {
     background-color: rgb(53, 171, 88);
     margin: 0px;
 }
+
+
+/* ########### Nav bar  ############### */
+
 header {
-    display: flex;
+    display: block;
     flex-flow:row-reverse wrap;
     width: 100%;
     background-color: azure;
@@ -16,27 +20,66 @@ header {
     align-items: center;
     justify-content: space-between;
 }
+
 nav{
-    display: flex;
+    display: block;
     flex-flow:row wrap; 
     margin-left: 250px;
     margin-right: 0px;
-    display: block;
     width: 100%;
     margin: 0;
-
 }
 
-a {
+nav ul{
+    overflow: hidden;
+    margin: auto;
+    padding: auto;
+    background-color: azure;
+    position: relative;
+    margin-block-start: auto;
+    margin-block-end: auto;
+    padding-inline-start: 0px;
+    margin-inline: auto;   
+}
+
+.header img {
+    background-color:azure;
+    opacity: 0.8;
+    border-right: rgb(123, 245, 123);
+    top: 50%;
+    margin: auto;
+    padding-left: 10px;
+    padding-top: 7px;
+}
+
+ul.topnav-left li{
+    list-style: none;
+    float: left;  
+}
+
+ul.topnav-left li a {
+    display: block;
     text-decoration: none;
-    padding: 10px;
+    min-height: 16px;
+    text-align: center;
+    padding: 18px 8px;
+    text-transform: uppercase;
     color: rgb(0, 0, 0);
-    font-size: 18x;
+    font-size: 18px;
 }
-a:hover {
+
+ul.topnav-left li a:hover {
+    background-color: lightcyan;
     font-style: oblique;
 }
 
+ul.topnav-left li.dropdownIcon{
+    display:none;
+}
+
+
+
+/* ######## main ###### */
 h1 {
     color: azure;
     text-align: center;
@@ -44,12 +87,6 @@ h1 {
     font-size: 40px;
 }
 
-.bg-img img{
-    width:700px;
-    height: 500px;
-    float:left;
-    
-}
 .circleText {
     font-size: 20px;
     background-color: rgb(253, 255, 133);
@@ -62,16 +99,21 @@ h1 {
     justify-items: center;
 
 }
-.header img {
-    background-color:azure;
-    opacity: 0.8;
-    border-right: rgb(123, 245, 123);
+
+.bg-img img{
+    width:700px;
+    height: 500px;
+    float:left; 
 }
+
+
+/* ############## section style ############# */
 section {
     display: flex;
     margin: 10px;
     float: both;
     flex-direction: column;
+    flex-wrap: wrap;
 }
 .sites {
     display: flex;
@@ -82,55 +124,66 @@ section {
     padding: 5px 10px;
     justify-content: space-between;
     border-radius: 10px;
+    margin-right: 30px;
+    width: 40em;
+    height: 15em;
 
 }
+
+h2 {
+    font-size: 3em;
+    margin-top: 0.25em;
+    margin-bottom: 0.25em;
+}
+
+.btn-yellow {
+    background-color: #FFF4A3;
+    color: black;
+    font-size: 18px;
+    margin: auto;
+    display: block;
+    width: 250px;
+    border-radius: 25px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.btn-black {
+    background-color: #282A35!important;
+    color: whitesmoke!important;
+}
+
+.btn-pink{
+  background-color:   #FFC0C7!important ;
+  color: black!important;
+}
+
+.btn-white{
+    background-color:   grey!important ;
+    color: white!important;
+    }
+
 .sites img {
     width: 60px;
     height:50px;
 }
 
 
+/* #################  Mobile Styles #################### */
 
-
-
-/* ########### Nav bar  ############### */
-
-
-nav ul{
-    overflow: hidden;
-    margin: 0;
-    padding: 0;
-    background-color: papayawhip;
-}
-
-ul.topnav-left li{
-    list-style: none;
-    float: left;
-}
-
-ul.topnav-left li a {
-    display: block;
-    text-decoration: none;
-    min-height: 16px;
-    text-align: center;
-    padding: 10px;
-    text-transform: uppercase;
-}
-
-ul.topnav-left li a:hover {
-    background-color: burlywood;
-}
-
-ul.topnav-left li.dropdownIcon{
-    display:none;
-}
-
-/* ########## Mobile Styles ############# */
-
+/* ##  NAV BAR Mobile Styles ## */
 @media screen and (max-width: 1010px) {
 
     ul.topnav-left li:not(:nth-child(1)) {
         display: none;
+    }
+
+    ul.topnav-left li img{
+        display: block;
+        text-align: left; 
+        margin-left: 0px;
+        width: 287.3px;
+        height: 74.36px;
     }
 
     ul.topnav-left li.dropdownIcon {
@@ -138,15 +191,28 @@ ul.topnav-left li.dropdownIcon{
         float: right;
     }
 
+    ul.topnav-left li.dropdownIcon a{
+        font-size: 45px;
+        margin-right: 0.5em;
+    }
+
+
     ul.topnav-left.responsive li.dropdownIcon{
         position: absolute;
         top:0;
         right: 0;
-        
+    }
+
+    ul.topnav-left.responsive li.dropdownIcon a{
+        position: absolute;
+        top:0;
+        right: 0;
+        font-size: 36px;
     }
 
     ul.topnav-left.responsive{
         position: relative;
+        transition: 0.5s;
     }
 
     ul.topnav-left.responsive li {
@@ -154,9 +220,43 @@ ul.topnav-left li.dropdownIcon{
         float: none;
     }
 
+    ul.topnav-left.responsive li img{
+        display: block;
+        text-align: left; 
+        margin-left: 0px;
+    }
+
     ul.topnav-left.responsive li a {
         display: block;
-        text-align: left;
+        text-align: right;
+        padding: 4px;
+        font-size: 21px;
     }
+
+   section {
+        flex: 100%;
+   }
+    
+   .sites {
+       align-self: center;
+       width: 55em; 
+   }
+
+   .circleText{
+    margin-right: 2em;
+    font-size: 25px;
+   }
+
+   .bg-img{
+        display: inline;
+   }
+
+   .bg-img img {
+       width: 350px;
+       height: 250px;
+       margin-left: 2em;
+       margin-top: 4em;
+   }
+    
 }
 
