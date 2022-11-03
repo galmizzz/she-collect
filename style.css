@@ -7,7 +7,7 @@ body {
     background-color: rgb(53, 171, 88);
     margin: 0px;
 }
-.header {
+header {
     display: flex;
     flex-flow:row-reverse wrap;
     width: 100%;
@@ -16,31 +16,40 @@ body {
     align-items: center;
     justify-content: space-between;
 }
+
 nav{
-    display: flex;
+    display: block;
     flex-flow:row wrap; 
     margin-left: 250px;
     margin-right: 0px;
-    display: block;
     width: 100%;
     margin: 0;
-}
-.header img {
-    background-color:azure;
-    opacity: 0.8;
-    border-right: rgb(123, 245, 123);
+
 }
 
-a {
+ul.topnav-left li a {
+    display: block;
     text-decoration: none;
-    padding: 10px;
+    min-height: 16px;
+    text-align: center;
+    padding: 18px 8px;
+    text-transform: uppercase;
     color: rgb(0, 0, 0);
-    font-size: 18x;
+    font-size: 18px;
 }
-a:hover {
+
+ul.topnav-left li a:hover {
+    background-color: lightcyan;
     font-style: oblique;
 }
 
+ul.topnav-left li.dropdownIcon{
+    display:none;
+}
+
+
+
+/* ######## main ###### */
 h1 {
     color: azure;
     text-align: center;
@@ -48,6 +57,12 @@ h1 {
     font-size: 40px;
 }
 
+.bg-img img{
+    width:700px;
+    height: 500px;
+    float:left;
+    
+}
 .circleText {
     font-size: 20px;
     background-color: rgb(253, 255, 133);
@@ -61,20 +76,16 @@ h1 {
     margin-right: 10px;
 
 }
-.bg-img {
-    width: 60px;
-    height: 50px;
-    float: right;
+.header img {
+    background-color:azure;
+    opacity: 0.8;
+    border-right: rgb(123, 245, 123);
 }
-
 section {
     display: inline-flex;
     margin: 10px;
     float: both;
-    flex-direction: row;
-    background-color: azure;
-    border-radius: 10px;
-
+    flex-direction: column;
 }
 .sites {
     display: flex;
@@ -82,17 +93,18 @@ section {
     align-items: center;
     margin: 5px;
     padding: 5px 10px;
-    justify-content: space-evenly;
-    margin-right: 50px;
-}
-
-section img {
-    width: 150px;
-    height:150px;
-    margin-right: 100px;
-    margin-top: 10px;
+    justify-content: space-between;
+    border-radius: 10px;
 
 }
+.sites img {
+    width: 60px;
+    height:50px;
+}
+
+
+
+
 
 /* ########### Nav bar  ############### */
 
@@ -101,36 +113,57 @@ nav ul{
     overflow: hidden;
     margin: 0;
     padding: 0;
+    background-color: papayawhip;
 }
 
-ul.topnav-left li{
-    list-style: none;
-    float: left;
-}
-
-ul.topnav-left li a {
+.btn-yellow {
+    background-color: #FFF4A3;
+    color: black;
+    font-size: 18px;
+    margin: auto;
     display: block;
+    width: 250px;
+    border-radius: 25px;
     text-decoration: none;
-    min-height: 16px;
     text-align: center;
-    padding: 10px;
-    text-transform: uppercase;
 }
 
-ul.topnav-left li a:hover {
-    background-color: burlywood;
+.btn-black {
+    background-color: #282A35!important;
+    color: whitesmoke!important;
 }
 
-ul.topnav-left li.dropdownIcon{
-    display:none;
+.btn-pink{
+  background-color:   #FFC0C7!important ;
+  color: black!important;
 }
 
-/* ########## Mobile Styles ############# */
+.btn-white{
+    background-color:   grey!important ;
+    color: white!important;
+    }
 
+.sites img {
+    width: 60px;
+    height:50px;
+}
+
+
+/* #################  Mobile Styles #################### */
+
+/* ##  NAV BAR Mobile Styles ## */
 @media screen and (max-width: 1010px) {
 
     ul.topnav-left li:not(:nth-child(1)) {
         display: none;
+    }
+
+    ul.topnav-left li img{
+        display: block;
+        text-align: left; 
+        margin-left: 0px;
+        width: 287.3px;
+        height: 74.36px;
     }
 
     ul.topnav-left li.dropdownIcon {
@@ -138,15 +171,28 @@ ul.topnav-left li.dropdownIcon{
         float: right;
     }
 
+    ul.topnav-left li.dropdownIcon a{
+        font-size: 45px;
+        margin-right: 0.5em;
+    }
+
+
     ul.topnav-left.responsive li.dropdownIcon{
         position: absolute;
         top:0;
         right: 0;
-        
+    }
+
+    ul.topnav-left.responsive li.dropdownIcon a{
+        position: absolute;
+        top:0;
+        right: 0;
+        font-size: 36px;
     }
 
     ul.topnav-left.responsive{
         position: relative;
+        transition: 0.5s;
     }
 
     ul.topnav-left.responsive li {
@@ -154,9 +200,43 @@ ul.topnav-left li.dropdownIcon{
         float: none;
     }
 
+    ul.topnav-left.responsive li img{
+        display: block;
+        text-align: left; 
+        margin-left: 0px;
+    }
+
     ul.topnav-left.responsive li a {
         display: block;
-        text-align: left;
+        text-align: right;
+        padding: 4px;
+        font-size: 21px;
     }
+
+   section {
+        flex: 100%;
+   }
+    
+   .sites {
+       align-self: center;
+       width: 55em; 
+   }
+
+   .circleText{
+    margin-right: 2em;
+    font-size: 25px;
+   }
+
+   .bg-img{
+        display: inline;
+   }
+
+   .bg-img img {
+       width: 350px;
+       height: 250px;
+       margin-left: 2em;
+       margin-top: 4em;
+   }
+    
 }
 
