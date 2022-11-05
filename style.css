@@ -26,9 +26,12 @@ nav{
     margin: 0;
 
 }
+li {
+    display: inline-block;
+}
 
 ul.topnav-left li a {
-    display: block;
+    display: inline-block;
     text-decoration: none;
     min-height: 16px;
     text-align: center;
@@ -47,9 +50,6 @@ ul.topnav-left li.dropdownIcon{
     display:none;
 }
 
-
-
-/* ######## main ###### */
 h1 {
     color: azure;
     text-align: center;
@@ -81,8 +81,14 @@ h1 {
     opacity: 0.8;
     border-right: rgb(123, 245, 123);
 }
+
+/* ######## main ###### */
+
+main {
+    display: flex;
+    flex-direction: row-reverse;
+}
 section {
-    display: inline-flex;
     margin: 10px;
     float: both;
     flex-direction: column;
