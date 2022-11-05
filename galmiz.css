@@ -34,7 +34,7 @@ nav ul{
     overflow: hidden;
     margin: auto;
     padding: auto;
-    background-color::rgb(225, 255, 177);
+    background-color:rgb(225, 255, 177);
     position: relative;
     margin-block-start: auto;
     margin-block-end: auto;
