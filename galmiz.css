@@ -19,6 +19,8 @@ header {
     margin: 0px;
     align-items: center;
     justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
 }
 
 nav{
@@ -39,16 +41,20 @@ nav ul{
     margin-block-start: auto;
     margin-block-end: auto;
     padding-inline-start: 0px;
-    margin-inline: auto;   
+    margin-inline: auto;  
+    display: flex;
+    flex-flow: row-reverse wrap; 
+    justify-content: right;
+    margin-right: 20px;
 }
 
-.header img {
+header img {
     opacity: 0.8;
     border-right: rgb(123, 245, 123);
     top: 50%;
-    margin: auto;
     padding-left: 10px;
     padding-top: 7px;
+    margin-left: 40px;
 }
 
 ul.topnav-left li{
@@ -84,16 +90,24 @@ h1 {
     margin-bottom: 0;
 }
 
-.circleText {
+p {
     font-size: 20px;
     text-align: center;
     border-radius: 10px;
-    padding: 40px;
     margin-top: 0;
 }
 
-
 /* ############## section style ############# */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main img {
+    height: 400px;
+    width:  550px;
+}
 section {
     display: flex;
     margin: auto;
@@ -158,10 +172,21 @@ a:hover {
     margin: 20px 5px;
 }
 
-.bg-img img{
-    width:700px;
-    height: 500px;
-    float:left; 
+footer {
+    display: flex;
+    flex-direction: row wrap;
+    justify-content: center;
+    background-color: rgb(225, 255, 177);
+}
+footer img {
+    height: 70px;
+    width: 70px;
+    border-radius: 100%;
+    margin: 10px;
+}
+
+h3 {
+    padding-top: 15px;
 }
 
 
