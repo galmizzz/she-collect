@@ -7,13 +7,19 @@ body {
     background-color: rgb(53, 171, 88);
     margin: 0px;
 }
+
+
+/* ########### Nav bar  ############### */
+
 header {
-    display: flex;
+    display: block;
     flex-flow:row-reverse wrap;
     width: 100%;
-    background-color: azure;
+    background-color:rgb(225, 255, 177);
     margin: 0px;
     align-items: center;
+    justify-content: space-between;
+    display: flex;
     justify-content: space-between;
 }
 
@@ -24,14 +30,40 @@ nav{
     margin-right: 0px;
     width: 100%;
     margin: 0;
-
 }
-li {
-    display: inline-block;
+
+nav ul{
+    overflow: hidden;
+    margin: auto;
+    padding: auto;
+    background-color:rgb(225, 255, 177);
+    position: relative;
+    margin-block-start: auto;
+    margin-block-end: auto;
+    padding-inline-start: 0px;
+    margin-inline: auto;  
+    display: flex;
+    flex-flow: row-reverse wrap; 
+    justify-content: right;
+    margin-right: 20px;
+}
+
+header img {
+    opacity: 0.8;
+    border-right: rgb(123, 245, 123);
+    top: 50%;
+    padding-left: 10px;
+    padding-top: 7px;
+    margin-left: 40px;
+}
+
+ul.topnav-left li{
+    list-style: none;
+    float: left;  
 }
 
 ul.topnav-left li a {
-    display: inline-block;
+    display: block;
     text-decoration: none;
     min-height: 16px;
     text-align: center;
@@ -42,7 +74,6 @@ ul.topnav-left li a {
 }
 
 ul.topnav-left li a:hover {
-    background-color: lightcyan;
     font-style: oblique;
 }
 
@@ -50,80 +81,66 @@ ul.topnav-left li.dropdownIcon{
     display:none;
 }
 
+
 h1 {
-    color: azure;
+    color: rgb(251, 251, 243);
     text-align: center;
     letter-spacing: 5px;
     font-size: 40px;
+    margin-bottom: 0;
 }
 
-.bg-img img{
-    width:700px;
-    height: 500px;
-    float:left;
-    
-}
-.circleText {
+p {
     font-size: 20px;
-    background-color: rgb(253, 255, 133);
-    border-radius: 100%;
-    width: 300px;
-    height: 300px;
     text-align: center;
-    display: inline-flex;
-    align-items: center;
-    justify-items: center;
-    margin-right: 10px;
-
-}
-.header img {
-    background-color:azure;
-    opacity: 0.8;
-    border-right: rgb(123, 245, 123);
+    border-radius: 10px;
+    margin-top: 0;
 }
 
-/* ######## main ###### */
-
+/* ############## section style ############# */
 main {
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: column;
+    align-items: center;
+}
+
+main img {
+    height: 400px;
+    width:  550px;
 }
 section {
-    margin: 10px;
+    display: flex;
+    margin: auto;
     float: both;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 .sites {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color:rgb(225, 255, 177);
     margin: 5px;
-    padding: 5px 10px;
-    justify-content: space-between;
+    padding: 10px 10px;
+    justify-content: center;
     border-radius: 10px;
+    width: 17em;
+    height: 20em;
 
 }
-.sites img {
-    width: 60px;
-    height:50px;
+
+h2 {
+    font-size: 2em;
+    margin-top: 0.25em;
+    margin-bottom: 0.25em;
 }
-
-
-
-
-
-/* ########### Nav bar  ############### */
-
-
-nav ul{
-    overflow: hidden;
-    margin: 0;
-    padding: 0;
-    background-color: papayawhip;
+a:hover {
+    font-weight: bolder ;
 }
-
 .btn-yellow {
     background-color: #FFF4A3;
+    border: black 1px solid;
     color: black;
     font-size: 18px;
     margin: auto;
@@ -152,7 +169,26 @@ nav ul{
 .sites img {
     width: 60px;
     height:50px;
+    margin: 20px 5px;
 }
+
+footer {
+    display: flex;
+    flex-direction: row wrap;
+    justify-content: center;
+    background-color: rgb(225, 255, 177);
+}
+footer img {
+    height: 70px;
+    width: 70px;
+    border-radius: 100%;
+    margin: 10px;
+}
+
+h3 {
+    padding-top: 15px;
+}
+
 
 
 /* #################  Mobile Styles #################### */
@@ -245,4 +281,3 @@ nav ul{
    }
     
 }
-
