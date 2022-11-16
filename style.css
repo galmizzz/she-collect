@@ -15,9 +15,11 @@ header {
     display: block;
     flex-flow:row-reverse wrap;
     width: 100%;
-    background-color: azure;
+    background-color:rgb(225, 255, 177);
     margin: 0px;
     align-items: center;
+    justify-content: space-between;
+    display: flex;
     justify-content: space-between;
 }
 
@@ -34,22 +36,25 @@ nav ul{
     overflow: hidden;
     margin: auto;
     padding: auto;
-    background-color: azure;
+    background-color:rgb(225, 255, 177);
     position: relative;
     margin-block-start: auto;
     margin-block-end: auto;
     padding-inline-start: 0px;
-    margin-inline: auto;   
+    margin-inline: auto;  
+    display: flex;
+    flex-flow: row-reverse wrap; 
+    justify-content: right;
+    margin-right: 20px;
 }
 
-.header img {
-    background-color:azure;
+header img {
     opacity: 0.8;
     border-right: rgb(123, 245, 123);
     top: 50%;
-    margin: auto;
     padding-left: 10px;
     padding-top: 7px;
+    margin-left: 40px;
 }
 
 ul.topnav-left li{
@@ -69,7 +74,6 @@ ul.topnav-left li a {
 }
 
 ul.topnav-left li a:hover {
-    background-color: lightcyan;
     font-style: oblique;
 }
 
@@ -78,66 +82,65 @@ ul.topnav-left li.dropdownIcon{
 }
 
 
-
-/* ######## main ###### */
 h1 {
-    color: azure;
+    color: rgb(251, 251, 243);
     text-align: center;
     letter-spacing: 5px;
     font-size: 40px;
+    margin-bottom: 0;
 }
 
-.circleText {
+p {
     font-size: 20px;
-    background-color: rgb(253, 255, 133);
-    border-radius: 100%;
-    width: 300px;
-    height: 300px;
     text-align: center;
-    display: inline-flex;
-    align-items: center;
-    justify-items: center;
-
+    border-radius: 10px;
+    margin-top: 0;
 }
-
-.bg-img img{
-    width:700px;
-    height: 500px;
-    float:left; 
-}
-
 
 /* ############## section style ############# */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main img {
+    height: 400px;
+    width:  550px;
+}
 section {
     display: flex;
-    margin: 10px;
+    margin: auto;
     float: both;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
 }
 .sites {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: azure;
+    background-color:rgb(225, 255, 177);
     margin: 5px;
-    padding: 5px 10px;
-    justify-content: space-between;
+    padding: 10px 10px;
+    justify-content: center;
     border-radius: 10px;
-    margin-right: 30px;
-    width: 40em;
-    height: 15em;
+    width: 17em;
+    height: 20em;
 
 }
 
 h2 {
-    font-size: 3em;
+    font-size: 2em;
     margin-top: 0.25em;
     margin-bottom: 0.25em;
 }
-
+a:hover {
+    font-weight: bolder ;
+}
 .btn-yellow {
     background-color: #FFF4A3;
+    border: black 1px solid;
     color: black;
     font-size: 18px;
     margin: auto;
@@ -166,7 +169,26 @@ h2 {
 .sites img {
     width: 60px;
     height:50px;
+    margin: 20px 5px;
 }
+
+footer {
+    display: flex;
+    flex-direction: row wrap;
+    justify-content: center;
+    background-color: rgb(225, 255, 177);
+}
+footer img {
+    height: 70px;
+    width: 70px;
+    border-radius: 100%;
+    margin: 10px;
+}
+
+h3 {
+    padding-top: 15px;
+}
+
 
 
 /* #################  Mobile Styles #################### */
@@ -259,4 +281,3 @@ h2 {
    }
     
 }
-
