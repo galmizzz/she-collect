@@ -57,6 +57,10 @@ ul.topnav-left li{
     float: left;  
 }
 
+ul.topnav-left li:not(:nth-child(1)) {
+    float: right;
+}
+
 ul.topnav-left li a {
     display: block;
     text-decoration: none;
