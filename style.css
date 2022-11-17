@@ -19,8 +19,7 @@ header {
     margin: 0px;
     align-items: center;
     justify-content: space-between;
-    display: flex;
-    justify-content: space-between;
+
 }
 
 nav{
@@ -42,10 +41,6 @@ nav ul{
     margin-block-end: auto;
     padding-inline-start: 0px;
     margin-inline: auto;  
-    display: flex;
-    flex-flow: row-reverse wrap; 
-    justify-content: right;
-    margin-right: 20px;
 }
 
 header img {
@@ -55,6 +50,7 @@ header img {
     padding-left: 10px;
     padding-top: 7px;
     margin-left: 40px;
+
 }
 
 ul.topnav-left li{
@@ -146,7 +142,7 @@ a:hover {
     background-color: #FFF4A3;
     border: black 1px solid;
     color: black;
-    font-size: 18px;
+    font-size: 20px;
     margin: auto;
     display: block;
     width: 250px;
@@ -250,6 +246,7 @@ h3 {
         display: block;
         text-align: left; 
         margin-left: 0px;
+        float: left;
     }
 
     ul.topnav-left.responsive li a {
@@ -258,6 +255,10 @@ h3 {
         padding: 4px;
         font-size: 21px;
     }
+
+    ul.topnav-left.responsive li a.pic-pool-margintop {
+        margin-top: 2.5em;
+    } 
 
    section {
         flex: 100%;
