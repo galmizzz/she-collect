@@ -1,0 +1,13 @@
+{
+  "folders": [
+	{
+		"path": "."
+	},
+	{
+		"path": "../source/repos/FirstProject"
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "she-collect"
+  }
+}
